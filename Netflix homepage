@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Netflix</title>
+</head>
+
+<body>
+    <div class="bg-container">
+        <header>
+            <nav>
+                <p>Netflix</p>
+
+                <div class="menu">
+                    <ul>
+                        <li>Home</li>
+                        <li>TV Shows</li>
+                        <li>Movies</li>
+                        <li>My List</li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Unlimited Movies, TV shows, and more.</h1>
+                <div class="d-flex flex-row justify-content-center">
+                    <p class="caption ">Watch anywhere. Cancel anytime.</p>
+                </div>
+                <button class="bg-primary btn">Sign Up ></button>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2 style="color: white;">Featured Titles</h2>
+            <!-- Featured movie and TV show cards go here -->
+        </section>
+
+        <footer>
+            <p>&copy; 2023 Netflix Clone</p>
+        </footer>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
+
+
+#CSS
+
+/* Reset some default styles */
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Style header and navigation */
+
+.bg-container {
+    background-image: url("https://res.cloudinary.com/dkghpn4kd/image/upload/v1693894338/Netflix_adds_new_feature_to_avoid_video-streaming_embarrassment___Evening_Standard_-_Google_Chrome_05-09-2023_11_34_51_mqci5b.png");
+    height: 100vh;
+    background-size: cover;
+}
+
+.caption {
+    background-color: white;
+    width: 50vw;
+    text-align: center;
+    color: black;
+}
+
+.btn {
+    color: white;
+}
+
+p {
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: "Caveat";
+}
+
+
+
+
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.menu li {
+    cursor: pointer;
+}
+
+/* Style hero section */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Style featured section (you can add featured movie/TV show cards here) */
+.featured {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.featured h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Style footer */
+footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
